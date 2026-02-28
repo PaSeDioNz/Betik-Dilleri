@@ -1,0 +1,58 @@
+"""import bs4
+import requests
+from bs4 import BeautifulSoup
+
+dizi=[]
+url = 'https://www.milligazete.com.tr/arsiv/2021-07-26'
+r = requests.get(url)
+soup = BeautifulSoup(r.content, 'html5lib')
+
+def get_link_prostatkanseri(i):
+    dizi=[]
+    r = requests.get(i)
+    soup = BeautifulSoup(r.content, 'html5lib')
+    url = 'https://www.cumhuriyet.com.tr'
+    for a in soup.find_all('a', href=True):
+        link = a['href']
+        result = link.startswith("https://www.gazeteduvar.com.tr/")
+        if result == True:
+          result2 = link.startswith("https://www.gazeteduvar.com.tr/arsiv?")
+          if result2 == False:
+            if len(link)>57:
+               with open("gazeteduvar_link_prostat_kanser.txt", 'a') as file:
+                   file.write(link+'\n')
+                   dizi.append(link)
+    return dizi"""
+
+
+
+
+
+
+
+"""tarih = '09.11.2023'
+
+date = tarih.split('.')
+
+for i in date:
+    print(i)"""
+
+
+dizim = ['Ank- ara', 'İstan- bul', 'Gire - sun']
+
+def duzgunlestir(arr):
+
+    """for i in arr:
+        yeni = i.replace(' ','')
+        x = yeni.replace('-','')
+        print(x)"""
+
+    for i in arr:
+        x = i.split('-')
+        isim=''
+        for parca in x:
+            isim+=(parca.strip())
+        print("----------")
+        print(isim)
+
+duzgunlestir(dizim)
