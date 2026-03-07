@@ -1,0 +1,72 @@
+sinif1 = 1
+sinif2 = 2
+sinif3 = 3
+sinif4 = 4
+sinif5 = 5
+
+a1 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+a2 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+a3 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+
+b1 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+b2 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+b3 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+
+c1 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+c2 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+c3 = [sinif1,sinif2,sinif3,sinif4,sinif5]
+
+a = [a1,a2,a3]
+b = [b1,b2,b3]
+c = [c1,c2,c3]
+
+kampus = [a,b,c]
+sayac = 1
+sayac_snf = 1
+
+print("------------------------------------------------Kampüs------------------------------------------------------------------")
+for blok in kampus:
+
+    print("--------------------------------------Blok---------------------------------------------")
+    for kat in blok:
+
+        print("------------------------------Kat------------------------------","sayac: ",sayac)
+        sayac = sayac + 1
+        for sinif in kat:
+            print(sinif, f"     {sayac_snf}. sinif")
+            sayac_snfWW = sayac_snf + 1
+
+
+
+
+
+
+
+futbolcular = {
+    "futbolcu1": {
+        "adi": "Mauro",
+        "soyadi": "İcardi",
+        "yasi": "33",
+        "numara": "9",
+        "ayak": "sağ"
+    },
+    "futbolcu2": {
+        "adi": "Victor",
+        "soyadi": "Osimhen",
+        "yasi": "27",
+        "numara": "45",
+        "ayak": "sağ"
+    },
+    "futbolcu3": {
+        "adi": "Leroy",
+        "soyadi": "Sane",
+        "yasi": "30",
+        "numara": "10",
+        "ayak": "sol"
+    }
+}
+
+for futbolcu in futbolcular:
+    print("\n",futbolcu)
+    for bilgi in futbolcular[futbolcu]:
+        print(f"    {bilgi}: {futbolcular[futbolcu][bilgi]}")
