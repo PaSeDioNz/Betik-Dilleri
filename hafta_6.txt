@@ -1,0 +1,62 @@
+"""class HesapMakinesi:
+    def __init__(self,say1,say2):
+        self.say1 = say1
+        self.say2 = say2
+        self.hafiza = []
+
+    def topla(self):
+        sonuc = self.say1 + self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def cikar(self):
+        sonuc = self.say1 - self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def carp(self):
+        sonuc = self.say1 * self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+    def bol(self):
+        sonuc = self.say1 / self.say2
+        self.hafiza.append(sonuc)
+        print(sonuc)
+
+a = HesapMakinesi(75,3)
+a.topla()
+a.cikar()
+a.carp()
+a.bol()
+print("-------------")
+b = HesapMakinesi(44,4)
+b.topla()
+b.cikar()
+b.carp()
+b.bol()
+print("-------------")
+print(f"a hafızası: {a.hafiza}")
+print(f"b hafızası: {b.hafiza}")
+
+for c in a.hafiza:
+    b.hafiza.append(c)
+
+print(f"birleşik hafıza: {b.hafiza}")"""          MUHAMMET ALİ AYDIN
+
+
+"""class CarpimTablosu:
+    def __init__(self, say1):
+        self.say1 = say1
+        self.hafiza = []
+
+    def liste(self):
+        a = 0
+
+        for i in range(11):
+            print(f"{self.say1}x{a} = {self.say1 * a}")
+            a = a + 1
+
+a = CarpimTablosu(5)
+a.liste()"""
+
